@@ -1,10 +1,15 @@
 import Head from 'next/head'
 
-export function HeadComponent() {
+interface IHeadComponentProps {
+  title: string
+  description: string
+}
+
+export function HeadComponent({ title, description }: IHeadComponentProps) {
   return (
     <Head>
-      <title>Home</title>
-      <meta name="description" content="Home" />
+      <title>{title}</title>
+      <meta name="description" content={description} />
       {/* <link rel="icon" href="/favicon.ico" /> */}
     </Head>
   )
