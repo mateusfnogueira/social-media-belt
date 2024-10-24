@@ -1,0 +1,10 @@
+{
+  "SideBar": {
+    "home": "Início",
+    "links": "Links",
+    "config": "Configurações",
+    "user account": "Conta %user%",
+    "about": "Sobre",
+    "contact": "Contato"
+  }
+}
