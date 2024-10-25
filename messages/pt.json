@@ -6,5 +6,12 @@
     "user account": "Conta %user%",
     "about": "Sobre",
     "contact": "Contato"
+  },
+  "Links": {
+    "title": "Gerenciador de Links",
+    "add": "Adicionar Link",
+    "edit": "Editar Link",
+    "delete": "Deletar Link",
+    "create group": "Criar Grupo"
   }
 }

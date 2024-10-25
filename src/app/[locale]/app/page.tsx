@@ -1,12 +1,12 @@
+import { HeadingH1, HeadingH2 } from '@/components'
+import { useTranslations } from 'next-intl'
+
 export default function PageApp() {
+  const t = useTranslations('Links')
   return (
     <div className="px-4 pb-24 overflow-auto md:px-6">
-      <h1 className="text-4xl font-semibold text-gray-800 dark:text-white">
-        Good afternoom, Charlie APP
-      </h1>
-      <h2 className="text-gray-400 text-md">
-        Heres whats happening with your ambassador account today.
-      </h2>
+      <HeadingH1>Good afternoom, Charlie APP</HeadingH1>
+      <HeadingH2>Heres whats happening with your ambassador account today.</HeadingH2>
       <div className="flex flex-col items-center w-full my-6 space-y-4 md:space-x-4 md:space-y-0 md:flex-row">
         <div className="w-full md:w-6/12">
           <div className="relative w-full overflow-hidden bg-white shadow-lg dark:bg-gray-700">
