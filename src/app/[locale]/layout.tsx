@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import { InstallProviders } from '@/provider/install-providers'
 import { getMessages, setRequestLocale } from 'next-intl/server'
+import { Header, SideBar } from '@/components'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -28,7 +29,15 @@ export default async function GlobalLayout({ children, params: { locale } }: Pro
     <html lang={locale}>
       <body className={inter.className}>
         <InstallProviders locale={locale} messages={messages}>
-          {children}
+          <main className="relative h-screen overflow-hidden bg-gray-100 dark:bg-gray-800">
+            <div className="flex items-start justify-between">
+              <SideBar />
+              <div className="flex flex-col w-full md:space-y-4">
+                <Header />
+                {children}
+              </div>
+            </div>
+          </main>
         </InstallProviders>
       </body>
     </html>

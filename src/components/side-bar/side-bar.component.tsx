@@ -66,7 +66,7 @@ export function SideBar() {
             </Link>
             <Link
               className={MenuItemClass + ' ' + getActiveClass('config')}
-              href={`/${locale}/config`}
+              href={`/${locale}/settings`}
             >
               <span className="text-left">
                 <Chats />
