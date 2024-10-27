@@ -12,6 +12,15 @@
     "add": "Adicionar Link",
     "edit": "Editar Link",
     "delete": "Deletar Link",
-    "create group": "Criar Grupo"
+    "create group": "Criar Grupo",
+    "form": {
+      "create": "Criar Link",
+      "identify": "Identificação",
+      "public name": "Nome Público",
+      "internal name": "Nome Interno",
+      "destiny": "Destino",
+      "internal app link": "Link Interno para App",
+      "indentify admin": "Identificação do Admin"
+    }
   }
 }
